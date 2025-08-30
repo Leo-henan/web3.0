@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="zh-CN" style="color-scheme: dark;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lin's Blog - 资源中心</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <canvas class="fireworks"></canvas>
+    <div class="head">
+        <div class="main">
+            <a href="./index.html" class="logo">Lin's Blog</a>
+            <div id="hitokoto-container">
+                <p id="hitokoto">
+                    <a href="#" id="hitokoto_text">:D 获取中...</a>
+                </p>
+            </div>
+            <div class="menu">
+                <li class="magical btn" onclick="window.location.href='./index.html'">首页</li>
+                <li class="magical btn nav" onclick="window.location.href='./blog.html'">资源</li>
+                <li class="magical btn" onclick="window.location.href='./about.html'">关于我</li>
+            </div>
+            <div class="menu" id="menu-expand">
+                <li class="magical btn skin" id="menu-expand-child"><i class="icon menu-icon"></i></li>
+            </div>
+            <div id="menu-panel">
+                <div class="menu-panel-content">
+                    <li class="magical btn" onclick="window.location.href='./index.html'">首页</li>
+                    <li class="magical btn nav" onclick="window.location.href='./blog.html'">资源</li>
+                    <li class="magical btn" onclick="window.location.href='./about.html'">关于我</li>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="resources">
+        <div class="resources-header">
+            <h1>资源中心</h1>
+            <p>分享一些实用的软件和网站资源，希望能对您有所帮助</p>
+        </div>
+        
+        <div class="resources-content">
+            <!-- 小游戏资源 -->
+            <div class="resource-section">
+                <div class="section-title">
+                    <h2>🎮 小游戏资源</h2>
+                    <div class="section-divider"></div>
+                </div>
+                
+                <div class="resource-grid">
+                    <!-- 网页版我的世界 -->
+                    <div class="resource-card magical">
+                        <div class="resource-icon">🧱</div>
+                        <div class="resource-info">
+                            <h3 class="resource-name">网页版我的世界</h3>
+                            <p class="resource-desc">在线畅玩经典沙盒游戏，无需下载</p>
+                            <div class="resource-tags">
+                                <span class="tag">沙盒</span>
+                                <span class="tag">在线游戏</span>
+                            </div>
+                        </div>
+                        <a href="https://classic.minecraft.net/" class="resource-link" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                <path d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z" fill="#B3B3C1"></path>
+                            </svg>
+                        </a>
+                    </div>
+                    
+                    <!-- 游戏合集 -->
+                    <div class="resource-card magical">
+                        <div class="resource-icon">🎯</div>
+                        <div class="resource-info">
+                            <h3 class="resource-name">游戏合集</h3>
+                            <p class="resource-desc">精选小游戏合集，休闲娱乐必备</p>
+                            <div class="resource-tags">
+                                <span class="tag">小游戏</span>
+                                <span class="tag">休闲</span>
+                            </div>
+                        </div>
+                        <a href="https://game.hullqin.cn/" class="resource-link" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                <path d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z" fill="#B3B3C1"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            <!-- 软件资源 -->
+            <div class="resource-section" id="software-resources">
+                <div class="section-title">
+                    <h2>📱 软件资源</h2>
+                    <div class="section-divider"></div>
+                </div>
+                
+                <div class="resource-grid">
+                    <!-- 可可影视 -->
+                    <div class="resource-card magical">
+                        <div class="resource-icon">🎬</div>
+                        <div class="resource-info">
+                            <h3 class="resource-name">可可影视</h3>
+                            <p class="resource-desc">海量影视资源，高清在线观看</p>
+                            <div class="resource-tags">
+                                <span class="tag">影视</span>
+                                <span class="tag">在线播放</span>
+                            </div>
+                        </div>
+                        <a href="https://t-bu.cn/b00uzekrmf" class="resource-link" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                <path d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z" fill="#B3B3C1"></path>
+                            </svg>
+                        </a>
+                    </div>
+                    
+                    <!-- 文件合集 -->
+                    <div class="resource-card magical">
+                        <div class="resource-icon">📦</div>
+                        <div class="resource-info">
+                            <h3 class="resource-name">文件合集</h3>
+                            <p class="resource-desc">常用文件工具包，密码：1234</p>
+                            <div class="resource-tags">
+                                <span class="tag">工具</span>
+                                <span class="tag">合集</span>
+                            </div>
+                        </div>
+                        <a href="https://t-bu.cn/b00uzekrng" class="resource-link" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                <path d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z" fill="#B3B3C1"></path>
+                            </svg>
+                        </a>
+                    </div>
+                    
+                    <!-- Game合集 -->
+                    <div class="resource-card magical">
+                        <div class="resource-icon">🗂️</div>
+                        <div class="resource-info">
+                            <h3 class="resource-name">Game合集</h3>
+                            <p class="resource-desc">精选游戏软件，密码：1234</p>
+                            <div class="resource-tags">
+                                <span class="tag">游戏</span>
+                                <span class="tag">娱乐</span>
+                            </div>
+                        </div>
+                        <a href="https://t-bu.cn/b00uzekrmf" class="resource-link" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                <path d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z" fill="#B3B3C1"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                </div>
+
+            <!-- 网站资源部分 -->
+            <div class="resource-section">
+                <div class="section-title">
+                    <h2>🌐 网站资源</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <!-- 视频与社交 -->
+                <div class="category-section">
+                    <h3 class="category-title">📺 视频与社交</h3>
+                    <div class="resource-grid">
+                        <div class="resource-card magical"><div class="resource-icon">📺</div><div class="resource-info"><h3 class="resource-name">哔哩哔哩</h3><p class="resource-desc">年轻世代文化社区</p><div class="resource-tags"><span class="tag">弹幕</span><span class="tag">二次元</span></div></div><a href="https://www.bilibili.com/" class="resource-link" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z" fill="#B3B3C1"/></svg></a></div>
+                        <div class="resource-card magical"><div class="resource-icon">🎶</div><div class="resource-info"><h3 class="resource-name">抖音</h3><p class="resource-desc">记录美好生活</p><div class="resource-tags"><span class="tag">短视频</span><span class="tag">音乐</span></div></div><a href="https://www.douyin.com/" class="resource-link" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z" fill="#B3B3C1"/></svg></a></div>
+                        <div class="resource-card magical"><div class="resource-icon">❓</div><div class="resource-info"><h3 class="resource-name">知乎</h3><p class="resource-desc">有问题，就会有答案</p><div class="resource-tags"><span class="tag">问答</span><span class="tag">知识</span></div></div><a href="https://www.zhihu.com/" class="resource-link" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z" fill="#B3B3C1"/></svg></a></div>
+                    </div>
+                </div>
+
+                <!-- 音乐平台 -->
+                <div class="category-section">
+                    <h3 class="category-title">🎵 音乐平台</h3>
+                    <div class="resource-grid">
+                        <div class="resource-card magical"><div class="resource-icon">🎵</div><div class="resource-info"><h3 class="resource-name">网易云音乐</h3><p class="resource-desc">音乐的力量，听见好时光</p><div class="resource-tags"><span class="tag">音乐</span><span class="tag">社区</span></div></div><a href="https://music.163.com/" class="resource-link" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z" fill="#B3B3C1"/></svg></a></div>
+                        <div class="resource-card magical"><div class="resource-icon">🎧</div><div class="resource-info"><h3 class="resource-name">QQ音乐</h3><p class="resource-desc">千万正版音乐，海量无损曲库</p><div class="resource-tags"><span class="tag">音乐</span><span class="tag">正版</span></div></div><a href="https://y.qq.com/" class="resource-link" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z" fill="#B3B3C1"/></svg></a></div>
+                    </div>
+                </div>
+
+                <!-- 工具与云服务 -->
+                <div class="category-section">
+                    <h3 class="category-title">⚙️ 工具与云服务</h3>
+                    <div class="resource-grid">
+                        <div class="resource-card magical"><div class="resource-icon">📺</div><div class="resource-info"><h3 class="resource-name">央视网</h3><p class="resource-desc">权威新闻直播</p><div class="resource-tags"><span class="tag">直播</span><span class="tag">新闻</span></div></div><a href="https://tv.cctv.com/" class="resource-link" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z" fill="#B3B3C1"/></svg></a></div>
+                        <div class="resource-card magical"><div class="resource-icon">📧</div><div class="resource-info"><h3 class="resource-name">QQ邮箱</h3><p class="resource-desc">安全快速邮件服务</p><div class="resource-tags"><span class="tag">邮箱</span><span class="tag">腾讯</span></div></div><a href="https://mail.qq.com/" class="resource-link" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z" fill="#B3B3C1"/></svg></a></div>
+                        <div class="resource-card magical"><div class="resource-icon">📮</div><div class="resource-info"><h3 class="resource-name">网易邮箱</h3><p class="resource-desc">专业邮箱服务</p><div class="resource-tags"><span class="tag">邮箱</span><span class="tag">网易</span></div></div><a href="https://mail.163.com/" class="resource-link" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z" fill="#B3B3C1"/></svg></a></div>
+                        <div class="resource-card magical"><div class="resource-icon">🚀</div><div class="resource-info"><h3 class="resource-name">Netlify</h3><p class="resource-desc">现代化部署平台</p><div class="resource-tags"><span class="tag">部署</span><span class="tag">DevOps</span></div></div><a href="https://www.netlify.com/" class="resource-link" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z" fill="#B3B3C1"/></svg></a></div>
+                        <div class="resource-card magical"><div class="resource-icon">🐙</div><div class="resource-info"><h3 class="resource-name">GitHub</h3><p class="resource-desc">全球最大的代码托管平台</p><div class="resource-tags"><span class="tag">代码</span><span class="tag">开源</span></div></div><a href="https://github.com/" class="resource-link" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z" fill="#B3B3C1"/></svg></a></div>
+                        <div class="resource-card magical"><div class="resource-icon">📁</div><div class="resource-info"><h3 class="resource-name">蓝奏云</h3><p class="resource-desc">便捷文件分享</p><div class="resource-tags"><span class="tag">网盘</span><span class="tag">分享</span></div></div><a href="https://www.lanzou.com/" class="resource-link" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z" fill="#B3B3C1"/></svg></a></div>
+                        <div class="resource-card magical"><div class="resource-icon">📦</div><div class="resource-info"><h3 class="resource-name">123云盘</h3><p class="resource-desc">安全存储高速下载</p><div class="resource-tags"><span class="tag">网盘</span><span class="tag">存储</span></div></div><a href="https://www.123pan.com/" class="resource-link" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z" fill="#B3B3C1"/></svg></a></div>
+                        <div class="resource-card magical"><div class="resource-icon">☁️</div><div class="resource-info"><h3 class="resource-name">百度网盘</h3><p class="resource-desc">让美好永远陪伴</p><div class="resource-tags"><span class="tag">网盘</span><span class="tag">备份</span></div></div><a href="https://pan.baidu.com/" class="resource-link" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z" fill="#B3B3C1"/></svg></a></div>
+                        <div class="resource-card magical"><div class="resource-icon">🚀</div><div class="resource-info"><h3 class="resource-name">夸克网盘</h3><p class="resource-desc">智能云存储</p><div class="resource-tags"><span class="tag">网盘</span><span class="tag">智能</span></div></div><a href="https://pan.quark.cn/" class="resource-link" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z" fill="#B3B3C1"/></svg></a></div>
+                    </div>
+                </div>
+
+                <!-- 教育学习 -->
+                <div class="category-section">
+                    <h3 class="category-title">📚 教育学习</h3>
+                    <div class="resource-grid">
+                        <div class="resource-card magical"><div class="resource-icon">📖</div><div class="resource-info"><h3 class="resource-name">有道精品课</h3><p class="resource-desc">名师在线辅导</p><div class="resource-tags"><span class="tag">教育</span><span class="tag">名师</span></div></div><a href="https://ke.youdao.com/" class="resource-link" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z" fill="#B3B3C1"/></svg></a></div>
+                        <div class="resource-card magical"><div class="resource-icon">🎓</div><div class="resource-info"><h3 class="resource-name">学而思网校</h3><p class="resource-desc">让学习更有效</p><div class="resource-tags"><span class="tag">网校</span><span class="tag">K12</span></div></div><a href="https://www.xueersi.com/" class="resource-link" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z" fill="#B3B3C1"/></svg></a></div>
+                        <div class="resource-card magical"><div class="resource-icon">🦉</div><div class="resource-info"><h3 class="resource-name">多邻国</h3><p class="resource-desc">免费学外语</p><div class="resource-tags"><span class="tag">语言</span><span class="tag">免费</span></div></div><a href="https://www.duolingo.cn/" class="resource-link" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z" fill="#B3B3C1"/></svg></a></div>
+                        <div class="resource-card magical"><div class="resource-icon">📐</div><div class="resource-info"><h3 class="resource-name">高途课堂</h3><p class="resource-desc">在线学习辅导</p><div class="resource-tags"><span class="tag">辅导</span><span class="tag">在线</span></div></div><a href="https://h5.gaojiua.com/#/" class="resource-link" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z" fill="#B3B3C1"/></svg></a></div>
+                        <div class="resource-card magical"><div class="resource-icon">🔤</div><div class="resource-info"><h3 class="resource-name">有道翻译</h3><p class="resource-desc">精准翻译工具</p><div class="resource-tags"><span class="tag">翻译</span><span class="tag">工具</span></div></div><a href="https://fanyi.youdao.com/" class="resource-link" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z" fill="#B3B3C1"/></svg></a></div>
+                    </div>
+                </div>
+
+                <!-- AI 助手 -->
+                <div class="category-section">
+                    <h3 class="category-title">🤖 AI 助手</h3>
+                    <div class="resource-grid">
+                        <div class="resource-card magical"><div class="resource-icon">🌙</div><div class="resource-info"><h3 class="resource-name">Kimi</h3><p class="resource-desc">月之暗面AI助手</p><div class="resource-tags"><span class="tag">AI</span><span class="tag">对话</span></div></div><a href="https://kimi.moonshot.cn/" class="resource-link" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z" fill="#B3B3C1"/></svg></a></div>
+                        <div class="resource-card magical"><div class="resource-icon">🧩</div><div class="resource-info"><h3 class="resource-name">豆包</h3><p class="resource-desc">字节AI助手</p><div class="resource-tags"><span class="tag">AI</span><span class="tag">字节</span></div></div><a href="https://www.doubao.com/" class="resource-link" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z" fill="#B3B3C1"/></svg></a></div>
+                        <div class="resource-card magical"><div class="resource-icon">🚄</div><div class="resource-info"><h3 class="resource-name">DeepSeek</h3><p class="resource-desc">深度求索AI助手</p><div class="resource-tags"><span class="tag">AI</span><span class="tag">深度</span></div></div><a href="https://chat.deepseek.com/" class="resource-link" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z" fill="#B3B3C1"/></svg></a></div>
+                        <div class="resource-card magical"><div class="resource-icon">💰</div><div class="resource-info"><h3 class="resource-name">腾讯元宝</h3><p class="resource-desc">腾讯AI助手</p><div class="resource-tags"><span class="tag">AI</span><span class="tag">腾讯</span></div></div><a href="https://yuanbao.tencent.com/" class="resource-link" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z" fill="#B3B3C1"/></svg></a></div>
+                        <div class="resource-card magical"><div class="resource-icon">🌊</div><div class="resource-info"><h3 class="resource-name">海螺AI</h3><p class="resource-desc">MiniMax AI助手</p><div class="resource-tags"><span class="tag">AI</span><span class="tag">MiniMax</span></div></div><a href="https://hailuoai.com/" class="resource-link" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z" fill="#B3B3C1"/></svg></a></div>
+                        <div class="resource-card magical"><div class="resource-icon">🤖</div><div class="resource-info"><h3 class="resource-name">文心一言</h3><p class="resource-desc">百度AI对话产品</p><div class="resource-tags"><span class="tag">AI</span><span class="tag">百度</span></div></div><a href="https://yiyan.baidu.com/" class="resource-link" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z" fill="#B3B3C1"/></svg></a></div>
+                        <div class="resource-card magical"><div class="resource-icon">🪁</div><div class="resource-info"><h3 class="resource-name">通义千问</h3><p class="resource-desc">阿里巴巴大模型</p><div class="resource-tags"><span class="tag">AI</span><span class="tag">阿里</span></div></div><a href="https://tongyi.aliyun.com/" class="resource-link" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z" fill="#B3B3C1"/></svg></a></div>
+                        <div class="resource-card magical"><div class="resource-icon">🧠</div><div class="resource-info"><h3 class="resource-name">智谱清言</h3><p class="resource-desc">清华AI助手</p><div class="resource-tags"><span class="tag">AI</span><span class="tag">清华</span></div></div><a href="https://chatglm.cn/" class="resource-link" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z" fill="#B3B3C1"/></svg></a></div>
+                    </div>
+                </div>
+
+                <!-- 云存储与品牌服务 -->
+                <div class="category-section">
+                    <h3 class="category-title">☁️ 云存储与品牌</h3>
+                    <div class="resource-grid">
+                        <div class="resource-card magical"><div class="resource-icon">📱</div><div class="resource-info"><h3 class="resource-name">华为云空间</h3><p class="resource-desc">华为设备云备份</p><div class="resource-tags"><span class="tag">华为</span><span class="tag">备份</span></div></div><a href="https://cloud.huawei.com/" class="resource-link" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z" fill="#B3B3C1"/></svg></a></div>
+                        <div class="resource-card magical"><div class="resource-icon">📲</div><div class="resource-info"><h3 class="resource-name">vivo云服务</h3><p class="resource-desc">vivo设备云同步</p><div class="resource-tags"><span class="tag">vivo</span><span class="tag">同步</span></div></div><a href="https://yun.vivo.com.cn/" class="resource-link" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z" fill="#B3B3C1"/></svg></a></div>
+                        <div class="resource-card magical"><div class="resource-icon">📱</div><div class="resource-info"><h3 class="resource-name">小米云服务</h3><p class="resource-desc">小米设备云中心</p><div class="resource-tags"><span class="tag">小米</span><span class="tag">同步</span></div></div><a href="https://i.mi.com/" class="resource-link" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z" fill="#B3B3C1"/></svg></a></div>
+                        <div class="resource-card magical"><div class="resource-icon">📲</div><div class="resource-info"><h3 class="resource-name">OPPO云服务</h3><p class="resource-desc">OPPO设备云同步</p><div class="resource-tags"><span class="tag">OPPO</span><span class="tag">同步</span></div></div><a href="https://cloud.oppo.com/" class="resource-link" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z" fill="#B3B3C1"/></svg></a></div>
+                    </div>
+                </div>
+
+                <!-- 工具与实用网站 -->
+                <div class="category-section">
+                    <h3 class="category-title">🛠️ 工具与实用</h3>
+                    <div class="resource-grid">
+                        <div class="resource-card magical"><div class="resource-icon">✂️</div><div class="resource-info"><h3 class="resource-name">剪映</h3><p class="resource-desc">轻而易剪</p><div class="resource-tags"><span class="tag">视频</span><span class="tag">剪辑</span></div></div><a href="https://www.capcut.cn/" class="resource-link" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z" fill="#B3B3C1"/></svg></a></div>
+                        <div class="resource-card magical"><div class="resource-icon">🌤️</div><div class="resource-info"><h3 class="resource-name">中国天气</h3><p class="resource-desc">权威天气预报</p><div class="resource-tags"><span class="tag">天气</span><span class="tag">预报</span></div></div><a href="https://www.weather.com.cn/" class="resource-link" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z" fill="#B3B3C1"/></svg></a></div>
+                        <div class="resource-card magical"><div class="resource-icon">📊</div><div class="resource-info"><h3 class="resource-name">Speedtest</h3><p class="resource-desc">网速测试</p><div class="resource-tags"><span class="tag">测速</span><span class="tag">工具</span></div></div><a href="https://www.speedtest.net/" class="resource-link" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z" fill="#B3B3C1"/></svg></a></div>
+                        <div class="resource-card magical"><div class="resource-icon">💻</div><div class="resource-info"><h3 class="resource-name">中关村在线</h3><p class="resource-desc">科技产品资讯</p><div class="resource-tags"><span class="tag">科技</span><span class="tag">资讯</span></div></div><a href="https://www.zol.com.cn/" class="resource-link" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z" fill="#B3B3C1"/></svg></a></div>
+                        <div class="resource-card magical"><div class="resource-icon">📝</div><div class="resource-info"><h3 class="resource-name">金山文档</h3><p class="resource-desc">在线协作办公</p><div class="resource-tags"><span class="tag">文档</span><span class="tag">协作</span></div></div><a href="https://www.kdocs.cn/" class="resource-link" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z" fill="#B3B3C1"/></svg></a></div>
+                        <div class="resource-card magical"><div class="resource-icon">📄</div><div class="resource-info"><h3 class="resource-name">腾讯文档</h3><p class="resource-desc">多人实时协作</p><div class="resource-tags"><span class="tag">文档</span><span class="tag">协作</span></div></div><a href="https://docs.qq.com/" class="resource-link" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z" fill="#B3B3C1"/></svg></a></div>
+                        <div class="resource-card magical"><div class="resource-icon">🔮</div><div class="resource-info"><h3 class="resource-name">JS魔法</h3><p class="resource-desc">前端资源百宝箱</p><div class="resource-tags"><span class="tag">前端</span><span class="tag">资源</span></div></div><a href="https://mc.js.cool/" class="resource-link" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z" fill="#B3B3C1"/></svg></a></div>
+                        <div class="resource-card magical"><div class="resource-icon">🔄</div><div class="resource-info"><h3 class="resource-name">资源下载</h3><p class="resource-desc">软件资源集散地</p><div class="resource-tags"><span class="tag">下载</span><span class="tag">资源</span></div></div><a href="https://dl.kkys01.com/" class="resource-link" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z" fill="#B3B3C1"/></svg></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="copyright">
+            <div>© 2025 Lin's Blog. All Rights Reserved.</div>
+        </div>
+    </div>
+    
+    <div class="widget">
+        <div class="shape-light"></div>
+        <div class="shape-star">
+            <div class="rising-stars rising-stars-visible">
+                <div style="height:1px;width:1px"></div>
+                <div style="height:2px;width:2px"></div>
+                <div style="height:1px;width:1px"></div>
+            </div>
+        </div>
+    </div>
+<script src="./js/main.js"></script>
+</body>
+</html>

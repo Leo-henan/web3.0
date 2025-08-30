@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN" style="color-scheme: dark;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+</head>
+<body>
+    <canvas class="fireworks"></canvas>
+    <div class="head">
+        <div class="main">
+            <a href="./index.html" class="logo">Lin's Blog</a>
+            <div class="menu">
+                <li class="magical btn nav" onclick="window.location.href='./index.html'">首页</li>
+                <li class="magical btn" onclick="window.location.href='./blog.html'">资源</li>
+                <li class="magical btn" onclick="window.location.href='./about.html'">关于我</li>
+            </div>
+            <div class="menu" id="menu-expand">
+                <li class="magical btn skin" id="menu-expand-child"><i class="icon menu-icon"></i></li>
+            </div>
+            <div id="menu-panel">
+                <div class="menu-panel-content">
+                    <li class="magical btn nav" onclick="window.location.href='./index.html'">首页</li>
+                    <li class="magical btn" onclick="window.location.href='./blog.html'">资源</li>
+                    <li class="magical btn" onclick="window.location.href='./about.html'">关于我</li>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="index">
+        <div class="hello">
+            <div class="title">
+                <div class="title-hi">你好，我是</div>
+                <a class="title-name" href="./index.html">Lin.</a>
+            </div>
+            <div class="hello-desc" id="typed"></div>
+        </div>
+        <div class="content-divider"></div>
+        <div class="quickly-link">
+            <div class="title-hi">我的作品</div>
+            <div class="loader"></div>
+            <div class="link-card">
+                <div class="link-card-list">
+                    <div class="magical link-card-item">
+                        <a href="https://gem816.netlify.app" target="_blank">
+                            <div class="info">
+                                <div class="info-title">网站v2.5</div>
+                            </div>
+                            <div class="icon icon-arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                    <path d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z" fill="#B3B3C1"></path>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="magical link-card-item">
+                        <a href="https://ny102.netlify.app" target="_blank">
+                            <div class="info">
+                                <div class="info-title">网站v2.0</div>
+                            </div>
+                            <div class="icon icon-arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                    <path d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z" fill="#B3B3C1"></path>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="magical link-card-item">
+                        <a href="#" target="_blank">
+                            <div class="info">
+                                <div class="info-title">项目三</div>
+                            </div>
+                            <div class="icon icon-arrow">
+                                <span style="color:#B3B3C1; font-size:14px;">网站链接丢失</span>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="copyright">
+            <div>© 2025 Lin's Blog. All Rights Reserved.</div>
+        </div>
+    </div>
+    <div class="widget">
+        <div class="shape-light"></div>
+        <div class="shape-star">
+            <div class="rising-stars rising-stars-visible">
+                <div style="height:1px;width:1px"></div>
+                <div style="height:2px;width:2px"></div>
+                <div style="height:1px;width:1px"></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    // 打字效果
+    const options = {
+        strings: [
+            ">_ 欢迎来到我的个人博客 ^1000",
+            ">_ 一起探索未知的世界 ^1000",
+        ],
+        typeSpeed: 50,
+        backSpeed: 20,
+        startDelay: 300,
+        loop: true,
+        showCursor: false,
+    };
+    const typed = new Typed('#typed', options);
+</script>
+<script src="./js/main.js"></script>
+</html>

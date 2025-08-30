@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="zh-CN" style="color-scheme: dark;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lin's Blog - 关于我</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        /* 弹窗样式 */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.7);
+            animation: fadeIn 0.3s ease;
+        }
+
+        .modal-content {
+            background-color: #1a1a2e;
+            margin: 10% auto;
+            padding: 30px;
+            border: 1px solid #888;
+            border-radius: 15px;
+            width: 80%;
+            max-width: 400px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            animation: slideIn 0.3s ease;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+            position: absolute;
+            right: 20px;
+            top: 15px;
+            z-index: 1001;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.1);
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #fff;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <canvas class="fireworks"></canvas>
+    <div class="head">
+        <div class="main">
+            <a href="./index.html" class="logo">Lin's Blog</a>
+            <div class="menu">
+                <li class="magical btn" onclick="window.location.href='./index.html'">首页</li>
+                <li class="magical btn" onclick="window.location.href='./blog.html'">资源</li>
+                <li class="magical btn nav" onclick="window.location.href='./about.html'">关于我</li>
+            </div>
+            <div class="menu" id="menu-expand">
+                <li class="magical btn skin" id="menu-expand-child"><i class="icon menu-icon"></i></li>
+            </div>
+            <div id="menu-panel">
+                <div class="menu-panel-content">
+                    <li class="magical btn" onclick="window.location.href='./index.html'">首页</li>
+                    <li class="magical btn" onclick="window.location.href='./blog.html'">资源</li>
+                    <li class="magical btn nav" onclick="window.location.href='./about.html'">关于我</li>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="about">
+        <div class="about-content">
+            <div class="about-info">
+                <div class="about-avatar">
+                    <img src="../png/self.jpg" alt="Lin." style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                </div>
+                <div class="about-intro">
+                    <div class="about-title">Lin.</div>
+                    <div class="about-links">
+                        <a href="#" class="about-link magical btn" id="contact-btn" onclick="openContactModal()">联系我</a>
+                        <a href="#" class="about-link magical btn" id="social-btn" onclick="openSocialModal()">我的社交平台</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="content-divider"></div>
+            
+            <!-- 个人介绍区域 -->
+            <div class="about-section">
+                <div class="about-desc">
+                    • 你好，我是名学生，平时喜欢点和科技有关的小东西，经常在互联网上观看这类视频。<br>
+                    • 音乐是我生活中不可或缺的一部分，尤其喜欢解解（邓紫棋）和周董（周杰伦）的歌，老带π了！🎵<br>
+                    • 这个博客是我分享科技心得、音乐感悟和学习成长的地方，希望能和志同道合的朋友一起交流进步。
+                </div>
+            </div>
+            
+            <!-- 联系弹窗模态框 -->
+            <div id="contact-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeContactModal()">&times;</span>
+                    <h2 style="margin-bottom: 20px;">联系我</h2>
+                    <div style="margin-bottom: 20px;">
+                        <strong>📧 邮箱联系：</strong><br>
+                        • wu1788911@163.com<br>
+                        • 33477667349@qq.com
+                    </div>
+                    <div>
+                        <strong>📱 微信扫码：</strong><br>
+                        <!-- 修改前 -->
+                        <img src="../png/self.jpg" alt="Lin." style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                        <img src="../png/WeChat.png" alt="微信二维码" style="width: 200px; height: 200px; margin: 10px 0; border-radius: 10px;">
+                        
+                        <!-- 修改后 -->
+                        <img src="/png/self.jpg" alt="Lin." style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                        <img src="/png/WeChat.png" alt="微信二维码" style="width: 200px; height: 200px; margin: 10px 0; border-radius: 10px;">
+                    </div>
+                </div>
+            </div>
+
+            <!-- 社交平台弹窗模态框 -->
+            <div id="social-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeSocialModal()">&times;</span>
+                    <h2 style="margin-bottom: 20px;">我的社交平台</h2>
+                    
+                    <style>
+                         .social-cards {
+                             display: grid;
+                             grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                             gap: 12px;
+                             margin-bottom: 15px;
+                         }
+                         .social-card {
+                             background: rgba(100, 181, 246, 0.1);
+                             border: 1px solid rgba(100, 181, 246, 0.3);
+                             border-radius: 8px;
+                             padding: 12px 16px;
+                             text-align: center;
+                             cursor: pointer;
+                             transition: all 0.3s ease;
+                             text-decoration: none;
+                             color: #64b5f6;
+                             font-size: 13px;
+                             font-weight: 500;
+                         }
+                         .social-card:hover {
+                             background: rgba(100, 181, 246, 0.2);
+                             transform: translateY(-2px);
+                             box-shadow: 0 4px 12px rgba(100, 181, 246, 0.2);
+                         }
+                     </style>
+
+                    <div class="social-section">
+                        <strong style="display: block; margin-bottom: 10px; font-size: 14px;">🎵 音乐平台</strong>
+                        <div class="social-cards">
+                            <a href="https://activity.kugou.com/share/v-c7b4da67/index.html?id=dd6a5630608aced32127b7855ef1b231" target="_blank" class="social-card">
+                                酷狗音乐
+                            </a>
+                            <a href="https://y.music.163.com/m/user?id=8071312076" target="_blank" class="social-card">
+                                网易云音乐
+                            </a>
+                            <a href="https://c6.y.qq.com/base/fcgi-bin/u?__=6NU7fiigv4Ua" target="_blank" class="social-card">
+                                QQ音乐
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="social-section">
+                        <strong style="display: block; margin-bottom: 10px; font-size: 14px;">📱 短视频平台</strong>
+                        <div class="social-cards">
+                            <a href="https://v.kuaishou.com/n5X1W9U2" target="_blank" class="social-card">
+                                快手
+                            </a>
+                            <a href="https://b23.tv/E9uELmY" target="_blank" class="social-card">
+                                哔哩哔哩
+                            </a>
+                            <a href="https://xhslink.com/m/hPUAqvSKep" target="_blank" class="social-card">
+                                小红书
+                            </a>
+                            <a href="https://v.douyin.com/BJJ7HeTGZ80/" target="_blank" class="social-card">
+                                抖音
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="social-section">
+                        <strong style="display: block; margin-bottom: 10px; font-size: 14px;">💬 社交平台</strong>
+                        <div class="social-cards">
+                            <a href="https://weibo.com/u/5271584062" target="_blank" class="social-card">
+                                微博
+                            </a>
+                            <a href="https://qm.qq.com/q/AnBnytszjE" target="_blank" class="social-card">
+                                QQ群
+                            </a>
+                            <a href="mailto:5@4.com" class="social-card">
+                                邮箱
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="copyright">
+            <div>© 2025 Lin's Blog. All Rights Reserved.</div>
+        </div>
+    </div>
+    <div class="widget">
+        <div class="shape-light"></div>
+        <div class="shape-star">
+            <div class="rising-stars rising-stars-visible">
+                <div style="height:1px;width:1px"></div>
+                <div style="height:2px;width:2px"></div>
+                <div style="height:1px;width:1px"></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/main.js"></script>
+<script>
+        // 联系弹窗功能
+        const contactModal = document.getElementById('contact-modal');
+        const socialModal = document.getElementById('social-modal');
+
+        function openContactModal() {
+            contactModal.style.display = 'block';
+            document.body.style.overflow = 'hidden'; // 防止背景滚动
+        }
+
+        function closeContactModal() {
+            contactModal.style.display = 'none';
+            document.body.style.overflow = 'auto'; // 恢复背景滚动
+        }
+
+        function openSocialModal() {
+            socialModal.style.display = 'block';
+            document.body.style.overflow = 'hidden'; // 防止背景滚动
+        }
+
+        function closeSocialModal() {
+            socialModal.style.display = 'none';
+            document.body.style.overflow = 'auto'; // 恢复背景滚动
+        }
+
+        // 点击弹窗外部关闭
+        window.onclick = function(event) {
+            if (event.target == contactModal) {
+                closeContactModal();
+            }
+            if (event.target == socialModal) {
+                closeSocialModal();
+            }
+        }
+
+        // ESC键关闭弹窗
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeContactModal();
+                closeSocialModal();
+            }
+        });
+
+        // 关闭按钮点击事件
+        document.addEventListener('click', function(event) {
+            if (event.target.classList.contains('close')) {
+                const modal = event.target.closest('.modal');
+                if (modal.id === 'contact-modal') {
+                    closeContactModal();
+                } else if (modal.id === 'social-modal') {
+                    closeSocialModal();
+                }
+            }
+        });
+    </script>
+</html>
